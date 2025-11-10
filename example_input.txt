@@ -1,0 +1,132 @@
+# LLM Research Output Example
+
+## Introduction to Machine Learning Pipeline
+
+This document describes a typical machine learning workflow with various diagrams.
+
+## Pipeline Overview
+
+Here's the main flowchart of our ML pipeline:
+
+```mermaid
+graph TD
+    A[Data Collection] --> B{Data Quality Check
+    B -->|Pass| C[Data Preprocessing
+    B -->|Fail| A
+    C --> D[Feature Engineering]
+    D --> E[Model Training
+    E --> F[Model Evaluation]
+    F --> G{Performance OK?}
+    G -->|Yes| H[Deploy Model]
+    G -->|No| E
+```
+
+## System Architecture
+
+The architecture uses a microservices approach:
+
+<code>
+sequencediagram
+    participant Client
+    participant API
+    participant Model
+    participant Database
+    
+    Client->>API: Send Request
+    API->>Model: Process Data
+    Model->>Database: Store Results
+    Database->>Model: Confirm
+    Model->>API: Return Prediction
+    API->>Client: Send Response
+</code>
+
+## Data Flow
+
+[code lang="mermaid"]
+flowchart LR
+    Raw[Raw Data] --> Clean[Clean Data]
+    Clean --> Train[Training Set]
+    Clean --> Test[Test Set]
+    Train --> Model{{ML Model}}
+    Model --> Eval[Evaluation]
+    Test --> Eval
+[/code]
+
+## Class Structure
+
+Here's the object model (missing proper tags):
+
+classDiagram
+    class DataProcessor{
+        +load_data()
+        +clean_data()
+        +transform()
+    }
+    class Model{
+        +train()
+        +predict()
+        +evaluate()
+    }
+    class Pipeline{
+        +run()
+        +save()
+    }
+    
+    Pipeline --> DataProcessor
+    Pipeline --> Model
+
+## State Transitions
+
+The model goes through several states during training:
+
+~~~
+stateDiagram-v2
+    [*] --> Initialized
+    Initialized --> Training
+    Training --> Validating
+    Validating --> Training: Poor Performance
+    Validating --> Trained: Good Performance
+    Trained --> Deployed
+    Deployed --> [*]
+~~~
+
+## Performance Metrics
+
+<pre>
+pie title Model Performance Distribution
+    "Accuracy" : 85
+    "Precision" : 90
+    "Recall" : 80
+    "F1-Score" : 82
+</pre>
+
+## Deployment Timeline
+
+gantt
+    title ML Model Deployment Schedule
+    dateFormat  YYYY-MM-DD
+    section Data Prep
+    Data Collection           :a1, 2024-01-01, 30d
+    Data Cleaning            :a2, after a1, 20d
+    section Model Dev
+    Model Training           :b1, after a2, 45d
+    Model Testing            :b2, after b1, 15d
+    section Deployment
+    Production Deploy        :c1, after b2, 10d
+
+## Network Topology (DOT format without proper wrapper)
+
+node [shape=box];
+API [label="API Gateway"];
+Service1 [label="Auth Service"];
+Service2 [label="ML Service"];
+DB [label="Database"];
+
+API -> Service1;
+API -> Service2;
+Service1 -> DB;
+Service2 -> DB;
+
+## Conclusion
+
+This pipeline ensures efficient model development and deployment with proper monitoring at each stage.
