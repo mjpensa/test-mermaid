@@ -2,6 +2,10 @@
 
 A flexible Python tool that processes LLM research output, identifies code blocks (including non-standard formats), validates and fixes syntax errors, and renders visual diagrams.
 
+## 🚀 Try it Online
+
+Visit the deployed web interface to process your LLM output instantly!
+
 ## Features
 
 - **Flexible Code Block Detection**: Identifies code blocks in multiple formats:
