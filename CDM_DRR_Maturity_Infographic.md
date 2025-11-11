@@ -114,38 +114,100 @@ quadrantChart
 ## Strategic Implications
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#0d47a1','primaryTextColor':'#ffffff','lineColor':'#ffffff','primaryBorderColor':'#ffffff','secondaryColor':'#f57c00','secondaryTextColor':'#ffffff','tertiaryColor':'#c62828','tertiaryTextColor':'#ffffff','mainBkg':'#0d47a1','textColor':'#ffffff','nodeTextColor':'#ffffff','clusterBkg':'#0d47a1','clusterBorder':'#ffffff','fontFamily':'arial'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#0d47a1','primaryTextColor':'#fff','lineColor':'#424242'}}}%%
 
-mindmap
-  root((CDM/DRR<br/>Adoption<br/>Impact))
-    JPMorgan Advantages
-      Reduced compliance costs ~50%
-      Higher data quality
-      Operational efficiency
-      Foundation for smart contracts
-      Industry leadership position
-      FINOS recognition
+flowchart TD
+    ROOT["<b>CDM/DRR Adoption Impact</b>"]
     
-    Regulatory Pressure
-      CFTC rewrite Dec 2022
-      EU EMIR Refit Apr 2024
-      UK EMIR Refit Sep 2024
-      Multi-million dollar fines
-      9+ jurisdictions mandated
+    JPM["<b>JPMorgan Advantages</b>"]
+    JPM1["Reduced compliance costs ~50%"]
+    JPM2["Higher data quality"]
+    JPM3["Operational efficiency"]
+    JPM4["Foundation for smart contracts"]
+    JPM5["Industry leadership position"]
+    JPM6["FINOS recognition"]
     
-    Competitive Risks
-      Technology lag
-      Higher ongoing costs
-      Manual reconciliation burden
-      Missed tokenization opportunity
-      Resource diversion BSA/AML
+    REG["<b>Regulatory Pressure</b>"]
+    REG1["CFTC rewrite Dec 2022"]
+    REG2["EU EMIR Refit Apr 2024"]
+    REG3["UK EMIR Refit Sep 2024"]
+    REG4["Multi-million dollar fines"]
+    REG5["9+ jurisdictions mandated"]
     
-    Future Trajectory
-      Smart contract readiness
-      DLT-based automation
-      Tokenized collateral
-      Settlement risk reduction
-      New product enablement
+    RISK["<b>Competitive Risks</b>"]
+    RISK1["Technology lag"]
+    RISK2["Higher ongoing costs"]
+    RISK3["Manual reconciliation burden"]
+    RISK4["Missed tokenization opportunity"]
+    RISK5["Resource diversion BSA/AML"]
+    
+    FUT["<b>Future Trajectory</b>"]
+    FUT1["Smart contract readiness"]
+    FUT2["DLT-based automation"]
+    FUT3["Tokenized collateral"]
+    FUT4["Settlement risk reduction"]
+    FUT5["New product enablement"]
+    
+    ROOT --> JPM
+    ROOT --> REG
+    ROOT --> RISK
+    ROOT --> FUT
+    
+    JPM --> JPM1
+    JPM --> JPM2
+    JPM --> JPM3
+    JPM --> JPM4
+    JPM --> JPM5
+    JPM --> JPM6
+    
+    REG --> REG1
+    REG --> REG2
+    REG --> REG3
+    REG --> REG4
+    REG --> REG5
+    
+    RISK --> RISK1
+    RISK --> RISK2
+    RISK --> RISK3
+    RISK --> RISK4
+    RISK --> RISK5
+    
+    FUT --> FUT1
+    FUT --> FUT2
+    FUT --> FUT3
+    FUT --> FUT4
+    FUT --> FUT5
+    
+    style ROOT fill:#1565c0,stroke:#0d47a1,stroke-width:3px,color:#fff
+    style JPM fill:#43a047,stroke:#2e7d32,stroke-width:2px,color:#fff
+    style REG fill:#fb8c00,stroke:#e65100,stroke-width:2px,color:#fff
+    style RISK fill:#e53935,stroke:#b71c1c,stroke-width:2px,color:#fff
+    style FUT fill:#5e35b1,stroke:#4527a0,stroke-width:2px,color:#fff
+    
+    style JPM1 fill:#66bb6a,stroke:#388e3c,color:#fff
+    style JPM2 fill:#66bb6a,stroke:#388e3c,color:#fff
+    style JPM3 fill:#66bb6a,stroke:#388e3c,color:#fff
+    style JPM4 fill:#66bb6a,stroke:#388e3c,color:#fff
+    style JPM5 fill:#66bb6a,stroke:#388e3c,color:#fff
+    style JPM6 fill:#66bb6a,stroke:#388e3c,color:#fff
+    
+    style REG1 fill:#ffa726,stroke:#f57c00,color:#fff
+    style REG2 fill:#ffa726,stroke:#f57c00,color:#fff
+    style REG3 fill:#ffa726,stroke:#f57c00,color:#fff
+    style REG4 fill:#ffa726,stroke:#f57c00,color:#fff
+    style REG5 fill:#ffa726,stroke:#f57c00,color:#fff
+    
+    style RISK1 fill:#ef5350,stroke:#d32f2f,color:#fff
+    style RISK2 fill:#ef5350,stroke:#d32f2f,color:#fff
+    style RISK3 fill:#ef5350,stroke:#d32f2f,color:#fff
+    style RISK4 fill:#ef5350,stroke:#d32f2f,color:#fff
+    style RISK5 fill:#ef5350,stroke:#d32f2f,color:#fff
+    
+    style FUT1 fill:#7e57c2,stroke:#5e35b1,color:#fff
+    style FUT2 fill:#7e57c2,stroke:#5e35b1,color:#fff
+    style FUT3 fill:#7e57c2,stroke:#5e35b1,color:#fff
+    style FUT4 fill:#7e57c2,stroke:#5e35b1,color:#fff
+    style FUT5 fill:#7e57c2,stroke:#5e35b1,color:#fff
 ```
 
 ---
