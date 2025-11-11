@@ -54,39 +54,27 @@ flowchart TB
 ## Key Consensus Findings
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#1565c0','primaryTextColor':'#fff','lineColor':'#424242','fontSize':'14px'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'cScale0':'#e8f5e9','cScale1':'#c8e6c9','cScale2':'#a5d6a7','cScale3':'#81c784','cScale4':'#66bb6a','cScale5':'#4caf50','cScale6':'#43a047','cScale7':'#388e3c','cScale8':'#2e7d32','cScale9':'#1b5e20','cScale10':'#1565c0','cScale11':'#0d47a1'}}}%%
 
 timeline
-    title Industry Evolution: FpML → CDM → DRR → Smart Contracts
+    title Industry Evolution - FpML to CDM to DRR to Smart Contracts
     
-    section Phase 1: FpML Era
-        1999 : JPMorgan/PwC launch FpML
-             : XML-based messaging standard
-        2000s : Industry fragmentation
-              : Manual reconciliations
-              : Operational risk
+    section Phase 1 FpML Era
+        1999 JPMorgan PwC launch FpML
+        2000s Industry fragmentation and manual reconciliations
     
-    section Phase 2: CDM Standard
-        2019 : ISDA CDM 2.0 deployed
-             : Machine-executable model
-             : Open-sourced via FINOS
-        2025 : CDM 6.0 released (June)
-             : Single industry blueprint
+    section Phase 2 CDM Standard
+        2019 ISDA CDM 2.0 deployed Machine-executable model
+        2025 CDM 6.0 released Single industry blueprint
     
-    section Phase 3: DRR Application
-        2022 : CFTC rules rewrite
-             : DRR 1.0 launch (Nov)
-             : BNP Paribas first user
-        2024 : JPM production deployment
-             : 9+ jurisdictions covered
-             : Up to 50% cost reduction
+    section Phase 3 DRR Application
+        2022 CFTC rules rewrite DRR 1.0 launch
+        2024 JPM production deployment 9+ jurisdictions
     
-    section Phase 4: Smart Contracts
-        2018-2020 : ISDA legal frameworks
-                  : Technical guidelines
-        2023 : JPM Tokenized Collateral live
-        2025 : ISDA/Tokenovate taskforce
-             : Open-source SC library
+    section Phase 4 Smart Contracts
+        2018-2020 ISDA legal frameworks
+        2023 JPM Tokenized Collateral live
+        2025 ISDA Tokenovate taskforce Open-source library
 ```
 
 ---
