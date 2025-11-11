@@ -126,7 +126,7 @@ quadrantChart
 ## Strategic Implications
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#0d47a1','secondaryColor':'#f57c00','tertiaryColor':'#c62828'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#0d47a1','primaryTextColor':'#fff','secondaryColor':'#f57c00','secondaryTextColor':'#fff','tertiaryColor':'#c62828','tertiaryTextColor':'#fff','fontFamily':'arial'}}}%%
 
 mindmap
   root((CDM/DRR<br/>Adoption<br/>Impact))
